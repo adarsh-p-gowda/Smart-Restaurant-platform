@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🍽️ Flavour Fusion - Smart Restaurant Platform</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-brand" onclick="navigateTo('landing')">
+        Flavour Fusion
+      </div>
+      <div class="nav-links" id="navLinks">
+        <button class="nav-link" onclick="navigateTo('landing')">Home</button>
+        <button class="nav-link" onclick="navigateTo('menu')">Menu</button>
+        <button class="nav-link" onclick="navigateTo('login')">Login</button>
+        <button class="nav-link btn-primary" onclick="navigateTo('register')">
+          Sign Up
+        </button>
+      </div>
+    </nav>
+
+    <!-- ============ LANDING PAGE ============ -->
+    <div class="page active" id="page-landing">
+      <div class="landing-hero">
+        <div class="floating-emojis">
+          <div
+            class="floating-emoji"
+            style="top: 10%; left: 5%; animation-delay: 0s"
+          >
+            🍕
+          </div>
+          <div
+            class="floating-emoji"
+            style="top: 20%; left: 85%; animation-delay: 2s"
+          >
+            🍔
+          </div>
+          <div
+            class="floating-emoji"
+            style="top: 60%; left: 10%; animation-delay: 4s"
+          >
+            🍜
+          </div>
+          <div
+            class="floating-emoji"
+            style="top: 70%; left: 90%; animation-delay: 1s"
+          >
+            🍧
+          </div>
+          <div
+            class="floating-emoji"
+            style="top: 40%; left: 75%; animation-delay: 3s"
+          >
+            🍹
+          </div>
+          <div
+            class="floating-emoji"
+            style="top: 80%; left: 40%; animation-delay: 5s"
+          >
+            🍱
+          </div>
+          <div
+            class="floating-emoji"
+            style="top: 15%; left: 45%; animation-delay: 2.5s"
+          >
+            🍳
+          </div>
+          <div
+            class="floating-emoji"
+            style="top: 50%; left: 55%; animation-delay: 1.5s"
+          >
+            🍰
+          </div>
+        </div>
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="live-dot"></span> Now Open — Order Online
+          </div>
+          <h1 class="hero-title">
+            Where Every Bite<br />Tells a <span>Delicious Story</span>
+          </h1>
+          <p class="hero-subtitle">
+            Experience the finest fusion cuisine crafted with passion. Fresh
+            ingredients, bold flavors, and a dining experience you'll never
+            forget.
+          </p>
+          <div class="hero-buttons">
+            <button class="btn btn-hero" onclick="navigateTo('menu')">
+              🔍 Explore Menu
+            </button>
+            <button class="btn btn-outline" onclick="navigateTo('register')">
+              ✨ Join Us Free
+            </button>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number">150+</div>
+              <div class="stat-label">Dishes</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">4.9⭐</div>
+              <div class="stat-label">Rating</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">10K+</div>
+              <div class="stat-label">Happy Customers</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">30 min</div>
+              <div class="stat-label">Avg Delivery</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="features-section">
+        <h2 class="section-title">Why Choose <span>Flavour Fusion</span>?</h2>
+        <p class="section-subtitle">
+          We're not just a restaurant — we're an experience
+        </p>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🍳</div>
+            <h3>Master Chefs</h3>
+            <p>
+              Our world-class chefs bring decades of experience from
+              Michelin-starred kitchens around the globe.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🌿</div>
+            <h3>Farm Fresh</h3>
+            <p>
+              We source only the freshest organic ingredients from local farms,
+              ensuring quality in every dish.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🚀</div>
+            <h3>Lightning Delivery</h3>
+            <p>
+              Hot, fresh food at your doorstep in 30 minutes or less. Guaranteed
+              freshness with every order.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💎</div>
+            <h3>Premium Quality</h3>
+            <p>
+              Every dish undergoes strict quality checks to ensure
+              restaurant-grade food reaches your table.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials-section">
+        <h2 class="section-title">What Our <span>Guests Say</span> 👭👬👫</h2>
+        <p class="section-subtitle">Real reviews from real food lovers</p>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              The butter chicken here is absolutely divine! Best I've ever had.
+              The flavors are so rich and authentic — I keep coming back every
+              week.
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">👸</div>
+              <div>
+                <div class="testimonial-name">Priya Sharma</div>
+                <div class="testimonial-role">Food Blogger</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              Fast delivery, amazing packaging, and the biryani was still
+              steaming hot! This platform has changed how I order food. Five
+              stars!
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">👨</div>
+              <div>
+                <div class="testimonial-name">Rahul Patel</div>
+                <div class="testimonial-role">Regular Customer</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              As a chef myself, I'm blown away by the fusion creativity here.
+              The paneer tikka pizza is genius! Innovative menu that keeps
+              evolving.
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">👩‍🍳</div>
+              <div>
+                <div class="testimonial-name">Chef Ananya</div>
+                <div class="testimonial-role">Culinary Expert</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-section">
+        <h2>Ready to Taste the <br />Extraordinary?</h2>
+        <p>
+          Join thousands of food lovers and start your culinary journey today.
+        </p>
+        <button
+          class="btn btn-outline"
+          onclick="navigateTo('register')"
+          style="border-color: rgba(255, 255, 255, 0.3)"
+        >
+          🎉 Get Started — It's Free
+        </button>
+      </div>
+
+      <div class="footer">
+        <p
+          style="
+            font-family:
+              &quot;Lucida Sans&quot;, &quot;Lucida Sans Regular&quot;,
+              &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;,
+              Geneva, Verdana, sans-serif;
+          "
+        >
+          <center>
+            © 2026 Flavour Fusion — Smart Restaurant Platform. Crafted with ❤️
+            by Adarsh P
+          </center>
+        </p>
+      </div>
+    </div>
+
+    <!-- ============ LOGIN PAGE ============ -->
+    <div class="page" id="page-login">
+      <div class="auth-page">
+        <div class="auth-container">
+          <div class="auth-header">
+            <span class="emoji">🔐</span>
+            <h2>Welcome Back</h2>
+            <p>Sign in to your account</p>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input
+              type="email"
+              class="form-input"
+              id="loginEmail"
+              placeholder="your@email.com"
+            />
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input
+              type="password"
+              class="form-input"
+              id="loginPassword"
+              placeholder="••••••••"
+            />
+          </div>
+          <button class="btn-full btn-auth" onclick="handleLogin()">
+            Sign In →
+          </button>
+          <div class="auth-divider">or</div>
+          <button
+            class="btn-full"
+            style="
+              background: var(--glass);
+              color: #fff;
+              border: 1px solid var(--glass-border);
+            "
+            onclick="handleAdminLogin()"
+          >
+            👦Login as Admin
+          </button>
+          <div class="auth-footer">
+            Don't have an account?
+            <a onclick="navigateTo('register')">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ REGISTER PAGE ============ -->
+    <div class="page" id="page-register">
+      <div class="auth-page">
+        <div class="auth-container">
+          <div class="auth-header">
+            <span class="emoji">🎉</span>
+            <h2>Create Account</h2>
+            <p>Join our foodie community</p>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name</label>
+              <input
+                type="text"
+                class="form-input"
+                id="regFirstName"
+                placeholder="John"
+              />
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input
+                type="text"
+                class="form-input"
+                id="regLastName"
+                placeholder="Doe"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input
+              type="email"
+              class="form-input"
+              id="regEmail"
+              placeholder="your@email.com"
+            />
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input
+              type="tel"
+              class="form-input"
+              id="regPhone"
+              placeholder="+91 98765 43210"
+            />
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input
+              type="password"
+              class="form-input"
+              id="regPassword"
+              placeholder="Min 6 characters"
+            />
+          </div>
+          <div class="form-group">
+            <label>Delivery Address</label>
+            <input
+              type="text"
+              class="form-input"
+              id="regAddress"
+              placeholder="Your full address"
+            />
+          </div>
+          <button class="btn-full btn-auth" onclick="handleRegister()">
+            Create Account ✨
+          </button>
+          <div class="auth-footer">
+            Already have an account?
+            <a onclick="navigateTo('login')">Sign In</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ MENU PAGE ============ -->
+    <div class="page" id="page-menu">
+      <div class="menu-page">
+        <div class="menu-header">
+          <h1>Our <span>Delicious</span> Menu</h1>
+          <div class="search-filter-bar">
+            <div class="search-box">
+              <span class="search-icon">🔍</span>
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="Search your favorite dish..."
+                oninput="filterMenu()"
+              />
+            </div>
+            <select class="sort-select" id="sortSelect" onchange="filterMenu()">
+              <option value="default">Sort By</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Highest Rated</option>
+              <option value="name">Name A-Z</option>
+            </select>
+          </div>
+          <div class="categories-bar" id="categoriesBar"></div>
+        </div>
+        <div class="menu-grid" id="menuGrid"></div>
+
+        <div
+          class="my-orders-section"
+          id="myOrdersSection"
+          style="display: none"
+        >
+          <h2>📦 My Orders</h2>
+          <div id="myOrdersList"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ ADMIN PAGE ============ -->
+    <div class="page" id="page-admin">
+      <div class="admin-page">
+        <div class="admin-container">
+          <div class="admin-welcome">
+            <h1>👋 Welcome, <span style="color: var(--gold)">Admin</span></h1>
+            <p>Here's what's happening at Flavour Fusion today</p>
+          </div>
+
+          <div class="admin-stats">
+            <div class="stat-card">
+              <div class="stat-card-icon">👥</div>
+              <div class="stat-card-value" id="adminUsers">0</div>
+              <div class="stat-card-label">Total Users</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card-icon">📦</div>
+              <div class="stat-card-value" id="adminOrders">0</div>
+              <div class="stat-card-label">Total Orders</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card-icon">💰</div>
+              <div class="stat-card-value" id="adminRevenue">₹0</div>
+              <div class="stat-card-label">Total Revenue</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card-icon">💳</div>
+              <div class="stat-card-value" id="adminSuccessRate">0%</div>
+              <div class="stat-card-label">Payment Success</div>
+            </div>
+          </div>
+
+          <div class="admin-sections">
+            <div class="admin-card">
+              <h3>➕ Add New Menu Item</h3>
+              <div class="add-item-form">
+                <input
+                  type="text"
+                  class="admin-form-input"
+                  id="newItemName"
+                  placeholder="Dish Name"
+                />
+                <div class="form-row">
+                  <input
+                    type="number"
+                    class="admin-form-input"
+                    id="newItemPrice"
+                    placeholder="Price (₹)"
+                  />
+                  <input
+                    type="text"
+                    class="admin-form-input"
+                    id="newItemEmoji"
+                    placeholder="Emoji (e.g. 🍕)"
+                  />
+                </div>
+                <div class="form-row">
+                  <select class="admin-form-input" id="newItemCategory">
+                    <option value="">Category</option>
+                    <option value="Starters">Starters</option>
+                    <option value="Main Course">Main Course</option>
+                    <option value="Biryani">Biryani</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Pizza">Pizza</option>
+                    <option value="Burgers">Burgers</option>
+                    <option value="Desserts">Desserts</option>
+                    <option value="Beverages">Beverages</option>
+                  </select>
+                  <select class="admin-form-input" id="newItemType">
+                    <option value="veg">🍏 Veg</option>
+                    <option value="nonveg">🍎 Non-Veg</option>
+                  </select>
+                </div>
+                <input
+                  type="text"
+                  class="admin-form-input"
+                  id="newItemImage"
+                  placeholder="Image URL (optional)"
+                />
+                <input
+                  type="text"
+                  class="admin-form-input"
+                  id="newItemDesc"
+                  placeholder="Short description"
+                />
+                <button class="btn-add-item" onclick="addMenuItem()">
+                  🚀 Add to Menu
+                </button>
+              </div>
+            </div>
+
+            <div class="admin-card">
+              <h3>📋 Manage Orders</h3>
+              <div class="recent-orders-list" id="adminOrdersList">
+                <div class="cart-empty">
+                  <span class="emoji">📭</span>
+                  <p>No orders yet</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="admin-card"
+              style="grid-column: 1 / -1; margin-top: 15px"
+            >
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  margin-bottom: 20px;
+                "
+              >
+                <h3>📊 Transaction Logs & User Analytics</h3>
+                <div class="admin-filters">
+                  <select
+                    id="txnStatusFilter"
+                    class="admin-form-input"
+                    style="width: 150px; margin-bottom: 0"
+                    onchange="renderAdmin()"
+                  >
+                    <option value="all">All Status</option>
+                    <option value="success">Success</option>
+                    <option value="failed">Failed</option>
+                    <option value="pending">Pending</option>
+                  </select>
+                </div>
+              </div>
+              <div class="admin-table-container">
+                <table class="admin-table">
+                  <thead>
+                    <tr>
+                      <th>TXN ID</th>
+                      <th>User</th>
+                      <th>Items</th>
+                      <th>Amount</th>
+                      <th>Method</th>
+                      <th>Status</th>
+                      <th>Time</th>
+                    </tr>
+                  </thead>
+                  <tbody id="adminTxnLogs">
+                    <!-- Logs will be rendered here -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="admin-card" style="margin-top: 25px">
+            <h3>
+              📝Menu Items
+              <span
+                style="font-weight: 400; color: #888; font-size: 0.85rem"
+                id="menuItemCount"
+              ></span>
+            </h3>
+            <div class="admin-menu-list" id="adminMenuList"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ CART PANEL ============ -->
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+    <div class="cart-panel" id="cartPanel">
+      <div class="cart-header">
+        <h2>📑 Your Cart</h2>
+        <button class="cart-close" onclick="toggleCart()">✕</button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <div class="cart-empty">
+          <span class="emoji">ℹ️</span>
+          <p>Your cart is empty</p>
+          <p style="font-size: 0.8rem">Add some delicious items!</p>
+        </div>
+      </div>
+      <div class="cart-footer" id="cartFooter" style="display: none">
+        <div class="cart-totals">
+          <div class="cart-total-row">
+            <span>Subtotal</span>
+            <span id="cartSubtotal">₹0</span>
+          </div>
+          <div class="cart-total-row">
+            <span>Delivery Fee</span>
+            <span id="cartDelivery">₹40</span>
+          </div>
+          <div class="cart-total-row">
+            <span>Tax (5%)</span>
+            <span id="cartTax">₹0</span>
+          </div>
+          <div class="cart-total-row total">
+            <span>Total</span>
+            <span class="amount" id="cartTotal">₹0</span>
+          </div>
+        </div>
+        <button class="btn-order" id="btnPlaceOrder" onclick="placeOrder()">
+          🎉 Place Order
+        </button>
+      </div>
+    </div>
+
+    <!-- ============ ORDER SUCCESS MODAL ============ -->
+    <div class="modal-overlay" id="orderModal">
+      <div class="modal-content">
+        <div class="success-icon">✅</div>
+        <h2>Order Placed Successfully!</h2>
+        <p>Your delicious food is being prepared</p>
+        <div class="order-details-box">
+          <div class="order-id" id="orderIdDisplay">Order #FF0001</div>
+          <div class="txn-id" id="txnIdDisplay">TXN: 1234567890</div>
+        </div>
+        <p style="font-size: 0.8rem; color: #888; margin-top: 10px">
+          Estimated delivery: 25-35 minutes
+        </p>
+        <div class="modal-actions">
+          <button class="btn btn-hero" onclick="closeOrderModal()">
+            Continue Browsing
+          </button>
+          <button
+            class="btn btn-outline"
+            id="btnDownloadInvoiceSuccess"
+            onclick="handleDownloadInvoiceFromModal()"
+          >
+            📥 Download Invoice
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ PAYMENT MODAL ============ -->
+    <div class="modal-overlay" id="paymentModal">
+      <div class="payment-modal-content">
+        <div class="payment-header">
+          <button class="payment-close" onclick="closePaymentModal()">✕</button>
+          <h3>Secure Payment</h3>
+          <p>
+            Total Amount: <span id="paymentAmountDisplay" class="gold">₹0</span>
+          </p>
+        </div>
+
+        <div class="payment-methods">
+          <div class="method-btn active" onclick="switchPaymentMethod('card')">
+            💳 Card
+          </div>
+          <div class="method-btn" onclick="switchPaymentMethod('upi')">
+            📱 UPI
+          </div>
+          <div class="method-btn" onclick="switchPaymentMethod('cod')">
+            💵 COD
+          </div>
+        </div>
+
+        <div id="cardPaymentForm" class="payment-form">
+          <div class="card-preview">
+            <div class="card-chip"></div>
+            <div class="card-number-display" id="cardNumDisp">
+              •••• •••• •••• ••••
+            </div>
+            <div class="card-bottom">
+              <div class="card-holder-display" id="cardHoldDisp">YOUR NAME</div>
+              <div class="card-expiry-display" id="cardExpDisp">MM/YY</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Card Holder Name</label>
+            <input
+              type="text"
+              class="form-input"
+              id="cardHolderInput"
+              placeholder="Full Name"
+            />
+          </div>
+          <div class="form-group">
+            <label>Card Number</label>
+            <input
+              type="text"
+              class="form-input"
+              id="cardNumInput"
+              placeholder="1234 5678 9012 3456"
+              maxlength="19"
+            />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Expiry Date</label>
+              <input
+                type="text"
+                class="form-input"
+                id="cardExpInput"
+                placeholder="MM/YY"
+                maxlength="5"
+              />
+            </div>
+            <div class="form-group">
+              <label>CVV</label>
+              <input
+                type="password"
+                class="form-input"
+                id="cardCvvInput"
+                placeholder="•••"
+                maxlength="3"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div id="upiPaymentForm" class="payment-form" style="display: none">
+          <div class="upi-qr-placeholder">
+            <div class="qr-mock">
+              <div class="qr-box"></div>
+              <div class="qr-logo">FF</div>
+            </div>
+            <p>Scan to Pay</p>
+          </div>
+          <div class="form-group">
+            <label>UPI ID</label>
+            <input
+              type="text"
+              class="form-input"
+              id="upiIdInput"
+              placeholder="username@upi"
+            />
+          </div>
+        </div>
+
+        <div id="codPaymentForm" class="payment-form" style="display: none">
+          <div class="cod-preview">
+            <div class="cod-icon">🚚</div>
+            <h4>Cash on Delivery</h4>
+            <p>Pay when you receive the order at your doorstep.</p>
+            <p style="font-size: 0.8rem; color: #888">
+              (Max amount for COD: ₹2,000)
+            </p>
+          </div>
+        </div>
+
+        <button
+          class="btn-full btn-auth"
+          style="margin-top: 20px"
+          onclick="processPayment()"
+        >
+          Pay Now <span id="paymentBtnAmount">₹0</span>
+        </button>
+        <p class="payment-footer">🔒 SSL Encrypted & Secure</p>
+      </div>
+    </div>
+
+    <!-- ============ PAYMENT LOADING OVERLAY ============ -->
+    <div class="payment-loading-overlay" id="paymentLoadingOverlay">
+      <div class="loading-content">
+        <div class="loader"></div>
+        <h3 id="loadingText">Processing Payment...</h3>
+        <p style="color: #888; font-size: 0.9rem">
+          Please do not refresh or close the page
+        </p>
+      </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
